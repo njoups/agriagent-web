@@ -32,13 +32,23 @@ const h = entry!.data;
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-phone">
-        <div class="hero-phone-screen">
-          <img src={h.phoneIconUrl} alt="AgriAgent App Icon" />
-          <h3>{h.phoneTitle}</h3>
-          <p>{h.phoneSubtitle}</p>
+      {h.phoneScreenshot ? (
+        <img
+          src={h.phoneScreenshot}
+          alt={h.phoneScreenshotAlt || "Tampilan aplikasi AgriAgent"}
+          class="hero-screenshot"
+          loading="eager"
+          fetchpriority="high"
+        />
+      ) : (
+        <div class="hero-phone">
+          <div class="hero-phone-screen">
+            <img src={h.phoneIconUrl} alt="AgriAgent App Icon" />
+            <h3>{h.phoneTitle}</h3>
+            <p>{h.phoneSubtitle}</p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   </div>
 </section>

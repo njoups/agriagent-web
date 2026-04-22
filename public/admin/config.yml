@@ -71,9 +71,11 @@ collections:
             fields:
               - { name: value, label: "Angka/Value", widget: string }
               - { name: label, label: "Label", widget: string }
-          - { name: phoneTitle, label: "Phone Mockup — Judul", widget: string }
-          - { name: phoneSubtitle, label: "Phone Mockup — Subjudul", widget: string }
-          - { name: phoneIconUrl, label: "Phone Mockup — Icon", widget: image }
+          - { name: phoneTitle, label: "Phone Mockup — Judul (fallback)", widget: string }
+          - { name: phoneSubtitle, label: "Phone Mockup — Subjudul (fallback)", widget: string }
+          - { name: phoneIconUrl, label: "Phone Mockup — Icon (fallback)", widget: image }
+          - { name: phoneScreenshot, label: "Hero Screenshot (kalau di-set, menggantikan panel icon+title)", widget: image, required: false }
+          - { name: phoneScreenshotAlt, label: "Screenshot Alt Text (utk SEO + accessibility)", widget: string, required: false }
 
       - name: "features"
         label: "Fitur Unggulan"

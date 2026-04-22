@@ -57,6 +57,9 @@ const landingHero = defineCollection({
     phoneTitle: z.string(),
     phoneSubtitle: z.string(),
     phoneIconUrl: z.string(),
+    // Optional: kalau di-set, hero kanan tampil screenshot app full (menggantikan panel icon+title+subtitle)
+    phoneScreenshot: z.string().optional(),
+    phoneScreenshotAlt: z.string().optional(),
   }),
 });
 

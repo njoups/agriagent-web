@@ -25,5 +25,7 @@
   ],
   "phoneTitle": "AgriAgent",
   "phoneSubtitle": "AI Co-Pilot untuk Petani Indonesia",
-  "phoneIconUrl": "/assets/icon.png"
+  "phoneIconUrl": "/assets/icon.png",
+  "phoneScreenshot": "/assets/hero-mockup.png",
+  "phoneScreenshotAlt": "Beranda AgriAgent — sambutan, cuaca, peringatan hama, dan pintasan fitur"
 }
