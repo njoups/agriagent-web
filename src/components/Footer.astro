@@ -1,0 +1,32 @@
+---
+import { getEntry } from "astro:content";
+
+const entry = await getEntry("landingFooter", "footer");
+const f = entry!.data;
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-name">
+          <img src="/assets/icon.png" alt="AgriAgent" />
+          AgriAgent
+        </div>
+        <p>{f.brandDescription}</p>
+      </div>
+      {f.columns.map((col) => (
+        <div>
+          <h4>{col.heading}</h4>
+          <ul>
+            {col.links.map((l) => (
+              <li><a href={l.href}>{l.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <div class="footer-bottom">
+      <p>{f.copyright}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,24 @@
+---
+import { getEntry } from "astro:content";
+
+const entry = await getEntry("landingHow", "how");
+const h = entry!.data;
+---
+<section class="section how-section" id="cara-kerja">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">{h.label}</span>
+      <h2>{h.title}</h2>
+      <p>{h.description}</p>
+    </div>
+    <div class="steps">
+      {h.steps.map((step, i) => (
+        <div class="step">
+          <div class="step-number">{i + 1}</div>
+          <h3>{step.title}</h3>
+          <p>{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

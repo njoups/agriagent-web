@@ -1,0 +1,23 @@
+---
+import { getEntry } from "astro:content";
+
+const entry = await getEntry("landingFaq", "faq");
+const q = entry!.data;
+---
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">{q.label}</span>
+      <h2>{q.title}</h2>
+      <p>{q.description}</p>
+    </div>
+    <div class="faq-list">
+      {q.items.map((item) => (
+        <details class="faq-item">
+          <summary>{item.question}</summary>
+          <div class="faq-answer" set:html={item.answer} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

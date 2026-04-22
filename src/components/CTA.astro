@@ -1,0 +1,19 @@
+---
+import { getEntry } from "astro:content";
+
+const entry = await getEntry("landingCta", "cta");
+const c = entry!.data;
+---
+<section class="cta-section" id="download">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>{c.title}</h2>
+      <p>{c.description}</p>
+      <div class="cta-stack">
+        <a href={c.buttonHref} class="cta-btn">{c.buttonLabel}</a>
+        {c.subtext && <div class="cta-sub">{c.subtext}</div>}
+        {c.emailNote && <div class="cta-email-note" set:html={c.emailNote} />}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+{
+  "id": "hero",
+  "badge": "🌾 AI Co-Pilot untuk Petani Indonesia",
+  "titleLine1": "Asisten Cerdas untuk",
+  "titleHighlight": "Petani Indonesia",
+  "description": "AgriAgent bantu Bapak/Ibu petani pakai AI Gemini canggih buat diagnosa penyakit, kalender tanam otomatis, harga pasar real-time, alarm hama, komunitas tani, dan banyak lagi. Cukup bicara atau foto, AI yang kerja.",
+  "primaryCtaLabel": "Daftar Beta Gratis",
+  "primaryCtaHref": "#download",
+  "secondaryCtaLabel": "Pelajari Lebih Lanjut",
+  "secondaryCtaHref": "#fitur",
+  "subnote": "Segera hadir di Google Play — daftar beta duluan, gratis.",
+  "stats": [
+    {
+      "value": "26+",
+      "label": "Jenis Tanaman"
+    },
+    {
+      "value": "27+",
+      "label": "Penyakit Terdata"
+    },
+    {
+      "value": "7",
+      "label": "Bahasa Tersedia"
+    }
+  ],
+  "phoneTitle": "AgriAgent",
+  "phoneSubtitle": "AI Co-Pilot untuk Petani Indonesia",
+  "phoneIconUrl": "/assets/icon.png"
+}

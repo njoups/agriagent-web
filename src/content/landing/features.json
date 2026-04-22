@@ -1,0 +1,53 @@
+{
+  "id": "features",
+  "label": "Fitur Unggulan",
+  "title": "Semua yang Petani Butuhkan dalam Satu Aplikasi",
+  "description": "Dirancang khusus untuk kemudahan petani Indonesia, dengan antarmuka suara dan teknologi AI terdepan.",
+  "items": [
+    {
+      "icon": "🎤",
+      "title": "Tanya Kang Tani (Voice AI)",
+      "description": "Ngobrol langsung pake suara sama AI Gemini — Bahasa Indonesia, Jawa Krama/Ngoko, Sunda, Batak, Minang, Bali. Kayak ngobrol sama penyuluh desa."
+    },
+    {
+      "icon": "📸",
+      "title": "Diagnosa Penyakit Instant",
+      "description": "Foto tanaman sakit, AI Gemini Vision analisa dalam 10 detik — kasih nama penyakit, tingkat keparahan, dan resep obat (kimia + organik)."
+    },
+    {
+      "icon": "💰",
+      "title": "Harga Pasar Real-time",
+      "description": "Data resmi PIHPS Bank Indonesia — padi, jagung, cabai, bawang, dll. Lengkap dengan tren naik/turun + saran kapan jual panen."
+    },
+    {
+      "icon": "📅",
+      "title": "Kalender Tanam Pintar",
+      "description": "AI bikin jadwal tanam komplit 18-25 aktivitas dari persiapan sampai panen — sesuai jenis tanaman, provinsi, dan musim. Tinggal ikutin."
+    },
+    {
+      "icon": "👥",
+      "title": "Komunitas Tani",
+      "description": "Forum tanya-jawab + direct message sesama petani Indonesia. Sharing pengalaman, tips, dan cerita sukses panen. Dapet jawaban dari petani senior."
+    },
+    {
+      "icon": "⚠️",
+      "title": "Alarm Hama AI (Premium)",
+      "description": "AI prediksi risiko hama 7 hari ke depan berdasarkan cuaca + tanaman aktif kamu. Dapat peringatan dini sebelum hama nyerang."
+    },
+    {
+      "icon": "📖",
+      "title": "Panduan Penyakit Offline",
+      "description": "Database 27+ penyakit tanaman dari penyuluh pertanian lengkap gejala, penyebab, obat kimia + organik. Bisa diakses tanpa sinyal internet."
+    },
+    {
+      "icon": "🧮",
+      "title": "Kalkulator Pupuk NPK",
+      "description": "Hitung dosis Urea + SP-36 + KCl per hektar (atau m²) buat padi, cabai, jagung, tomat, bawang. Lengkap dengan estimasi biaya HET bersubsidi."
+    },
+    {
+      "icon": "🌦️",
+      "title": "Prakiraan Cuaca Lokal",
+      "description": "Prakiraan cuaca 7-14 hari berbasis GPS sawah/kebun kamu — hujan, suhu, kelembaban, angin. Bantu atur jadwal semprot & panen."
+    }
+  ]
+}

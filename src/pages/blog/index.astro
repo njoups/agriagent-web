@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
+);
+
+const dateFmt = new Intl.DateTimeFormat("id-ID", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+<BaseLayout
+  title="Blog — Tips Pertanian & Update AgriAgent"
+  description="Blog AgriAgent — tips budidaya, tutorial pakai AI, cerita sukses petani, update harga komoditas, dan pengumuman fitur baru."
+>
+  <section class="blog-header">
+    <div class="container">
+      <h1>Blog AgriAgent</h1>
+      <p>Tips pertanian, tutorial AI, dan cerita petani Indonesia.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {posts.length === 0 ? (
+        <p style="text-align:center;color:var(--text-light);">Belum ada artikel. Nantikan ya!</p>
+      ) : (
+        <div class="blog-grid">
+          {posts.map((post) => (
+            <a href={`/blog/${post.id}/`} class="blog-card">
+              {post.data.cover && (
+                <img src={post.data.cover} alt={post.data.title} class="blog-card-cover" />
+              )}
+              <div class="blog-card-body">
+                <span class="blog-card-tag">{post.data.tag}</span>
+                <h3 class="blog-card-title">{post.data.title}</h3>
+                <p class="blog-card-excerpt">{post.data.excerpt}</p>
+                <div class="blog-card-meta">
+                  <span>{post.data.author}</span>
+                  <span>·</span>
+                  <span>{dateFmt.format(post.data.publishedAt)}</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

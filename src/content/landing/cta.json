@@ -1,0 +1,9 @@
+{
+  "id": "cta",
+  "title": "Jadi Beta Tester Duluan",
+  "description": "Dapat akses awal sebelum rilis resmi di Play Store. Gratis, tanpa kartu kredit, langsung pakai.",
+  "buttonLabel": "Daftar via Email",
+  "buttonHref": "mailto:beta@agriagent.co.id?subject=Daftar%20Beta%20AgriAgent&body=Halo%2C%20saya%20mau%20ikut%20program%20beta%20AgriAgent.%0A%0ANama%3A%0ADaerah%20%28kota%2Fkabupaten%29%3A%0AJenis%20tanaman%3A%0AHP%20merk%2Ftipe%3A",
+  "subtext": "Google Play — Segera Hadir",
+  "emailNote": "Atau email langsung: <a href=\"mailto:beta@agriagent.co.id\">beta@agriagent.co.id</a>"
+}

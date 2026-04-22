@@ -1,0 +1,40 @@
+{
+  "id": "faq",
+  "label": "FAQ",
+  "title": "Pertanyaan yang Sering Ditanya",
+  "description": "Hal-hal yang biasa ditanya petani sebelum mulai pakai AgriAgent.",
+  "items": [
+    {
+      "question": "Apakah AgriAgent benar-benar gratis?",
+      "answer": "Ya. Paket Gratis Rp 0/bulan selamanya — tanpa kartu kredit, tanpa trial period. Kamu dapat Kalender Tanam AI, Harga Pasar real-time, Komunitas Tani, Panduan Penyakit, Kalkulator Pupuk NPK, dan Cuaca 7 hari. Premium (Rp 19.900/bulan) hanya kalau kamu mau fitur AI lebih banyak."
+    },
+    {
+      "question": "Apa beda paket Gratis vs Premium?",
+      "answer": "Gratis: Tanya Kang Tani 3x/hari + Diagnosa 1x/hari, plus semua fitur dasar. Premium: tanpa batas untuk Tanya Kang Tani, Diagnosa 5x/hari, Alarm Hama AI 7 hari, Prediksi Harga Panen, Cuaca 14 hari, 6 Bahasa Daerah (Jawa, Sunda, Batak, Minang, Bali), dan Export PDF laporan keuangan."
+    },
+    {
+      "question": "Apakah bisa dipakai tanpa internet?",
+      "answer": "Bisa — sebagian besar data disimpan lokal di HP (SQLite). Kamu tetap bisa baca Panduan Penyakit 27+, lihat riwayat diagnosa, dan catatan keuangan saat offline. Fitur AI (Tanya Kang Tani, Diagnosa foto, Prediksi harga) butuh internet karena jalan di server AI."
+    },
+    {
+      "question": "HP Android versi berapa yang didukung?",
+      "answer": "Android 8 (Oreo) ke atas. RAM minimal 2 GB, storage kosong minimal 200 MB. Sudah diuji di Samsung, Xiaomi, OPPO, Vivo, Realme, dan Infinix kelas entry sampai flagship."
+    },
+    {
+      "question": "Bagaimana cara bayar Premium?",
+      "answer": "Lewat Midtrans — support GoPay, OVO, DANA, ShopeePay, transfer bank (BCA/Mandiri/BNI/BRI/Permata), Alfamart/Indomaret, dan kartu kredit. Langganan bisa batal kapan saja dari menu Profil → Langganan Premium."
+    },
+    {
+      "question": "Data saya aman tidak?",
+      "answer": "Aman. Foto diagnosa hanya diproses AI sementara, tidak disimpan di server kami. Data pribadi (nama, nomor HP, riwayat tanam) terenkripsi dan hanya kamu yang bisa akses. 1 akun = 1 HP (device lock) supaya akun kamu tidak bisa dipakai orang lain."
+    },
+    {
+      "question": "Saya tidak bisa baca/tulis lancar, bisa pakai?",
+      "answer": "Bisa banget. Fitur Tanya Kang Tani pakai suara — tinggal bicara, AI yang dengar dan jawab pakai suara juga. Cocok buat petani senior atau yang lebih nyaman ngobrol daripada ngetik. Tersedia dalam Bahasa Indonesia dan 6 bahasa daerah."
+    },
+    {
+      "question": "Bagaimana cara daftar jadi beta tester?",
+      "answer": "Email ke <a href=\"mailto:beta@agriagent.co.id\">beta@agriagent.co.id</a> dengan subjek \"Daftar Beta AgriAgent\" — sertakan nama, daerah (kota/kabupaten), jenis tanaman utama, dan tipe HP. Kami akan balas dalam 1-2 hari kerja dengan link APK."
+    }
+  ]
+}

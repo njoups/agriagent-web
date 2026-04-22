@@ -1,0 +1,133 @@
+{
+  "id": "pricing",
+  "label": "Pilihan Paket",
+  "title": "Harga Terjangkau untuk Petani",
+  "description": "Mulai gratis, upgrade kapan saja untuk akses lebih banyak fitur AI.",
+  "plans": [
+    {
+      "name": "Gratis",
+      "price": "Rp 0",
+      "priceSuffix": "/ bulan",
+      "desc": "Coba fitur dasar AgriAgent — cukup buat petani kecil.",
+      "features": [
+        {
+          "text": "Tanya Kang Tani 3x per hari",
+          "included": false
+        },
+        {
+          "text": "Diagnosa tanaman 1x per hari",
+          "included": false
+        },
+        {
+          "text": "Harga komoditas real-time",
+          "included": true
+        },
+        {
+          "text": "Kalender tanam AI",
+          "included": true
+        },
+        {
+          "text": "Komunitas tani + Forum",
+          "included": true
+        },
+        {
+          "text": "Panduan penyakit offline",
+          "included": true
+        },
+        {
+          "text": "Prakiraan cuaca 7 hari",
+          "included": true
+        },
+        {
+          "text": "Kalkulator pupuk NPK",
+          "included": true
+        },
+        {
+          "text": "Bahasa Indonesia",
+          "included": true
+        }
+      ],
+      "ctaLabel": "Mulai Gratis",
+      "ctaHref": "#download",
+      "ctaStyle": "outline"
+    },
+    {
+      "name": "Premium Bulanan",
+      "price": "Rp 19.900",
+      "priceSuffix": "/ bulan",
+      "desc": "Akses penuh semua fitur AI. Bayar per bulan, batal kapan saja.",
+      "featured": true,
+      "badge": "Paling Populer",
+      "features": [
+        {
+          "text": "Tanya Kang Tani <strong>tanpa batas</strong>",
+          "included": true
+        },
+        {
+          "text": "Diagnosa tanaman <strong>5x per hari</strong>",
+          "included": true
+        },
+        {
+          "text": "🚨 Alarm Hama AI 7 hari ke depan",
+          "included": true
+        },
+        {
+          "text": "💰 Prediksi harga panen terbaik",
+          "included": true
+        },
+        {
+          "text": "🌤️ Cuaca 14 hari (vs Free 7 hari)",
+          "included": true
+        },
+        {
+          "text": "🗣️ 6 Bahasa Daerah (Jawa Krama/Ngoko, Sunda, Batak, Minang, Bali)",
+          "included": true
+        },
+        {
+          "text": "📊 Export laporan PDF keuangan",
+          "included": true
+        },
+        {
+          "text": "Semua fitur di paket Gratis",
+          "included": true
+        }
+      ],
+      "ctaLabel": "Upgrade Premium",
+      "ctaHref": "#download",
+      "ctaStyle": "filled"
+    },
+    {
+      "name": "Premium Tahunan",
+      "price": "Rp 199.000",
+      "priceSuffix": "/ tahun",
+      "desc": "Bayar sekali setahun, hemat 2 bulan (16% off).",
+      "badge": "Hemat Rp 39.800",
+      "badgeColor": "#22C55E",
+      "features": [
+        {
+          "text": "Semua fitur Premium Bulanan",
+          "included": true
+        },
+        {
+          "text": "Bayar sekali, aktif <strong>12 bulan penuh</strong>",
+          "included": true
+        },
+        {
+          "text": "Hemat Rp 39.800 (2 bulan gratis)",
+          "included": true
+        },
+        {
+          "text": "Prioritas support WhatsApp",
+          "included": true
+        },
+        {
+          "text": "Early access fitur baru",
+          "included": true
+        }
+      ],
+      "ctaLabel": "Pilih Tahunan",
+      "ctaHref": "#download",
+      "ctaStyle": "outline"
+    }
+  ]
+}

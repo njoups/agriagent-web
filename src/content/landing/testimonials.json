@@ -1,0 +1,29 @@
+{
+  "id": "testimonials",
+  "label": "Testimoni Beta",
+  "title": "Feedback dari Beta Tester Awal",
+  "description": "Sesi uji coba di Karawang, Brebes, dan Bandung — Maret 2026.",
+  "items": [
+    {
+      "quote": "Dulu kalau tanaman padi saya kena penyakit, bingung harus tanya siapa. Sekarang tinggal foto pakai AgriAgent, langsung tahu penyakitnya apa dan obatnya apa. Sangat membantu.",
+      "initials": "PS",
+      "name": "Pak Suranto",
+      "role": "Petani Padi, Karawang",
+      "rating": 5
+    },
+    {
+      "quote": "Yang paling saya suka fitur ngomong langsung. Tidak usah ketik-ketik, tinggal bicara saja, AI-nya paham. Cocok untuk saya yang sudah tua dan mata sudah kurang jelas.",
+      "initials": "BM",
+      "name": "Bu Maryati",
+      "role": "Petani Cabai, Brebes",
+      "rating": 5
+    },
+    {
+      "quote": "Harga cabai naik turun terus, sekarang saya selalu cek harga di AgriAgent sebelum jual ke tengkulak. Jadi tahu kapan waktu terbaik untuk jual hasil panen.",
+      "initials": "PH",
+      "name": "Pak Hendra",
+      "role": "Petani Sayur, Bandung",
+      "rating": 5
+    }
+  ]
+}

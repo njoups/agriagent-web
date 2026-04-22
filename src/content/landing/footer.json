@@ -1,0 +1,82 @@
+{
+  "id": "footer",
+  "brandDescription": "AI Co-Pilot untuk petani Indonesia. Membantu diagnosa tanaman, informasi harga, jadwal tanam, dan banyak lagi dengan teknologi AI terdepan.",
+  "columns": [
+    {
+      "heading": "Fitur",
+      "links": [
+        {
+          "label": "Tanya Kang Tani",
+          "href": "/#fitur"
+        },
+        {
+          "label": "Diagnosa Tanaman",
+          "href": "/#fitur"
+        },
+        {
+          "label": "Harga Komoditas",
+          "href": "/#fitur"
+        },
+        {
+          "label": "Kalender Tanam",
+          "href": "/#fitur"
+        },
+        {
+          "label": "Alarm Hama AI",
+          "href": "/#fitur"
+        }
+      ]
+    },
+    {
+      "heading": "Informasi",
+      "links": [
+        {
+          "label": "Harga",
+          "href": "/#harga"
+        },
+        {
+          "label": "Cara Kerja",
+          "href": "/#cara-kerja"
+        },
+        {
+          "label": "Testimoni",
+          "href": "/#testimoni"
+        },
+        {
+          "label": "FAQ",
+          "href": "/#faq"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Daftar Beta",
+          "href": "/#download"
+        }
+      ]
+    },
+    {
+      "heading": "Kontak & Legal",
+      "links": [
+        {
+          "label": "halo@agriagent.co.id",
+          "href": "mailto:halo@agriagent.co.id"
+        },
+        {
+          "label": "beta@agriagent.co.id",
+          "href": "mailto:beta@agriagent.co.id"
+        },
+        {
+          "label": "Kebijakan Privasi",
+          "href": "/privacy"
+        },
+        {
+          "label": "Syarat & Ketentuan",
+          "href": "/terms"
+        }
+      ]
+    }
+  ],
+  "copyright": "© 2026 AgriAgent. Hak cipta dilindungi. Dibuat dengan cinta untuk petani Indonesia."
+}

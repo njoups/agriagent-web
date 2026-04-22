@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateFmt = new Intl.DateTimeFormat("id-ID", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+<BaseLayout
+  title={post.data.seoTitle || post.data.title}
+  description={post.data.seoDescription || post.data.excerpt}
+  image={post.data.cover}
+  type="article"
+  publishedTime={post.data.publishedAt.toISOString()}
+>
+  <article class="blog-post">
+    <div class="container">
+      <div class="blog-post-meta">
+        <a href="/blog/">← Kembali ke Blog</a>
+        <span class="blog-card-tag" style="display:inline-block;margin-left:12px;">{post.data.tag}</span>
+      </div>
+      <h1>{post.data.title}</h1>
+      <div class="blog-post-meta">
+        <span>{post.data.author}</span>
+        <span>·</span>
+        <span>{dateFmt.format(post.data.publishedAt)}</span>
+      </div>
+      {post.data.cover && (
+        <img src={post.data.cover} alt={post.data.title} class="blog-post-cover" />
+      )}
+      <div class="prose">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

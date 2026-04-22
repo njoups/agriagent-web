@@ -1,0 +1,224 @@
+# Decap CMS config — AgriAgent
+#
+# Backend: GitHub via OAuth. Requires:
+#   - GitHub OAuth App (Client ID/Secret) — set di Netlify/Vercel serverless atau pake
+#     Decap CMS OAuth provider (decap-proxy) di domain terpisah.
+#   - Untuk sementara pake "git-gateway" kalau di Netlify, atau switch ke "github" branch
+#     ketika deploy di Vercel (set backend.name: github).
+#
+# Alternatif sementara: pake local_backend di bawah supaya bisa edit via `npx decap-server`
+# di localhost tanpa perlu OAuth — lo edit di HP/laptop, commit manual.
+
+backend:
+  name: github
+  repo: REPLACE_WITH/agriagent-web      # Format: user/repo
+  branch: main
+  # Optional: auth URL kalau lo punya decap-proxy sendiri
+  # base_url: https://agriagent-cms-proxy.vercel.app
+
+# Local dev tanpa OAuth:
+#   npx decap-server    (jalanin di terminal lain, port 8081)
+#   akses http://localhost:4321/admin/
+local_backend: true
+
+# Folder upload untuk gambar yg di-upload dari CMS
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+site_url: https://agriagent.co.id
+display_url: https://agriagent.co.id
+logo_url: https://agriagent.co.id/assets/icon.png
+
+# ──────────────────────────────────────────────
+# Collections
+# ──────────────────────────────────────────────
+collections:
+  # ─── Site settings (1 file JSON) ───
+  - name: "settings"
+    label: "Pengaturan Website"
+    files:
+      - name: "site"
+        label: "Site-wide Settings"
+        file: "src/content/settings/site.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "site" }
+          - { name: siteTitle, label: "Judul Website (title tag)", widget: string }
+          - { name: siteDescription, label: "Meta Description", widget: text }
+          - { name: ogImage, label: "OG Image", widget: image, required: false }
+          - { name: gaId, label: "Google Analytics ID (G-XXXXX)", widget: string, required: false }
+
+  # ─── Landing page sections ───
+  - name: "landing"
+    label: "Landing Page"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "src/content/landing/hero.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "hero" }
+          - { name: badge, label: "Badge (text kecil atas)", widget: string }
+          - { name: titleLine1, label: "Judul utama", widget: string }
+          - { name: titleHighlight, label: "Judul highlight (hijau)", widget: string }
+          - { name: description, label: "Deskripsi", widget: text }
+          - { name: primaryCtaLabel, label: "Tombol Utama — Label", widget: string }
+          - { name: primaryCtaHref, label: "Tombol Utama — Link", widget: string }
+          - { name: secondaryCtaLabel, label: "Tombol Kedua — Label", widget: string }
+          - { name: secondaryCtaHref, label: "Tombol Kedua — Link", widget: string }
+          - { name: subnote, label: "Sub-note (teks kecil)", widget: string, required: false }
+          - name: stats
+            label: "Stats (angka kecil di bawah)"
+            widget: list
+            fields:
+              - { name: value, label: "Angka/Value", widget: string }
+              - { name: label, label: "Label", widget: string }
+          - { name: phoneTitle, label: "Phone Mockup — Judul", widget: string }
+          - { name: phoneSubtitle, label: "Phone Mockup — Subjudul", widget: string }
+          - { name: phoneIconUrl, label: "Phone Mockup — Icon", widget: image }
+
+      - name: "features"
+        label: "Fitur Unggulan"
+        file: "src/content/landing/features.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "features" }
+          - { name: label, label: "Section Label", widget: string }
+          - { name: title, label: "Section Title", widget: string }
+          - { name: description, label: "Section Description", widget: text }
+          - name: items
+            label: "Daftar Fitur"
+            widget: list
+            fields:
+              - { name: icon, label: "Icon (emoji)", widget: string }
+              - { name: title, label: "Judul Fitur", widget: string }
+              - { name: description, label: "Deskripsi Fitur", widget: text }
+
+      - name: "how"
+        label: "Cara Kerja"
+        file: "src/content/landing/how.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "how" }
+          - { name: label, label: "Section Label", widget: string }
+          - { name: title, label: "Section Title", widget: string }
+          - { name: description, label: "Section Description", widget: text }
+          - name: steps
+            label: "Langkah-langkah"
+            widget: list
+            fields:
+              - { name: title, label: "Judul Langkah", widget: string }
+              - { name: description, label: "Deskripsi", widget: text }
+
+      - name: "pricing"
+        label: "Paket Harga"
+        file: "src/content/landing/pricing.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "pricing" }
+          - { name: label, label: "Section Label", widget: string }
+          - { name: title, label: "Section Title", widget: string }
+          - { name: description, label: "Section Description", widget: text }
+          - name: plans
+            label: "Daftar Paket"
+            widget: list
+            fields:
+              - { name: name, label: "Nama Paket", widget: string }
+              - { name: price, label: "Harga (Rp XXX)", widget: string }
+              - { name: priceSuffix, label: "Suffix (/ bulan, / tahun)", widget: string }
+              - { name: desc, label: "Deskripsi Singkat", widget: text }
+              - { name: featured, label: "Paket Unggulan? (scale up + border hijau)", widget: boolean, default: false }
+              - { name: badge, label: "Badge Text (mis. 'Paling Populer')", widget: string, required: false }
+              - { name: badgeColor, label: "Badge Color (hex, mis. #22C55E)", widget: string, required: false }
+              - name: features
+                label: "Daftar Fitur Paket"
+                widget: list
+                fields:
+                  - { name: text, label: "Fitur (boleh pake HTML <strong>)", widget: string }
+                  - { name: included, label: "Termasuk penuh (✓) vs terbatas (–)", widget: boolean, default: true }
+              - { name: ctaLabel, label: "Label Tombol", widget: string }
+              - { name: ctaHref, label: "Link Tombol", widget: string }
+              - name: ctaStyle
+                label: "Style Tombol"
+                widget: select
+                options: ["outline", "filled"]
+                default: "outline"
+
+      - name: "testimonials"
+        label: "Testimoni"
+        file: "src/content/landing/testimonials.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "testimonials" }
+          - { name: label, label: "Section Label", widget: string }
+          - { name: title, label: "Section Title", widget: string }
+          - { name: description, label: "Section Description", widget: text }
+          - name: items
+            label: "Daftar Testimoni"
+            widget: list
+            fields:
+              - { name: quote, label: "Testimoni", widget: text }
+              - { name: initials, label: "Inisial (mis. 'PS')", widget: string }
+              - { name: name, label: "Nama", widget: string }
+              - { name: role, label: "Peran (mis. 'Petani Padi, Karawang')", widget: string }
+              - { name: rating, label: "Rating (1-5)", widget: number, default: 5, min: 1, max: 5 }
+
+      - name: "faq"
+        label: "FAQ"
+        file: "src/content/landing/faq.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "faq" }
+          - { name: label, label: "Section Label", widget: string }
+          - { name: title, label: "Section Title", widget: string }
+          - { name: description, label: "Section Description", widget: text }
+          - name: items
+            label: "Daftar Pertanyaan"
+            widget: list
+            fields:
+              - { name: question, label: "Pertanyaan", widget: string }
+              - { name: answer, label: "Jawaban (boleh HTML)", widget: text }
+
+      - name: "cta"
+        label: "Call-to-Action Bawah"
+        file: "src/content/landing/cta.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "cta" }
+          - { name: title, label: "Judul", widget: string }
+          - { name: description, label: "Deskripsi", widget: text }
+          - { name: buttonLabel, label: "Tombol — Label", widget: string }
+          - { name: buttonHref, label: "Tombol — Link", widget: string }
+          - { name: subtext, label: "Sub-teks (mis. 'Segera Hadir')", widget: string, required: false }
+          - { name: emailNote, label: "Catatan Email (boleh HTML)", widget: string, required: false }
+
+      - name: "footer"
+        label: "Footer"
+        file: "src/content/landing/footer.json"
+        fields:
+          - { name: id, label: ID, widget: hidden, default: "footer" }
+          - { name: brandDescription, label: "Deskripsi Brand", widget: text }
+          - name: columns
+            label: "Kolom Link"
+            widget: list
+            fields:
+              - { name: heading, label: "Judul Kolom", widget: string }
+              - name: links
+                label: "Link"
+                widget: list
+                fields:
+                  - { name: label, label: "Teks Link", widget: string }
+                  - { name: href, label: "Tujuan Link", widget: string }
+          - { name: copyright, label: "Copyright text", widget: string }
+
+  # ─── Blog posts ───
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { name: title, label: "Judul Artikel", widget: string }
+      - { name: excerpt, label: "Ringkasan Singkat", widget: text }
+      - { name: cover, label: "Cover Image", widget: image, required: false }
+      - { name: tag, label: "Kategori", widget: string, default: "Umum" }
+      - { name: author, label: "Penulis", widget: string, default: "Tim AgriAgent" }
+      - { name: publishedAt, label: "Tanggal Terbit", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, picker_utc: false }
+      - { name: draft, label: "Draft? (tidak ditampilkan)", widget: boolean, default: false }
+      - { name: seoTitle, label: "SEO Title (optional)", widget: string, required: false }
+      - { name: seoDescription, label: "SEO Description (optional)", widget: text, required: false }
+      - { name: body, label: "Isi Artikel (Markdown)", widget: markdown }

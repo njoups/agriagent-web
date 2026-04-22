@@ -1,0 +1,20 @@
+{
+  "id": "how",
+  "label": "Cara Kerja",
+  "title": "Mulai dalam 3 Langkah Mudah",
+  "description": "Tidak perlu ribet. Download, buka, dan langsung tanya AI tentang pertanian.",
+  "steps": [
+    {
+      "title": "Download dan Daftar",
+      "description": "Download AgriAgent gratis, daftar dengan nomor HP, dan langsung bisa dipakai."
+    },
+    {
+      "title": "Tanya atau Foto",
+      "description": "Bicara langsung ke AI tentang masalah pertanian, atau foto tanaman yang sakit untuk diagnosa."
+    },
+    {
+      "title": "Dapat Jawaban Cerdas",
+      "description": "AI berikan jawaban, diagnosa, rekomendasi obat, dan jadwal tanam yang sesuai kebutuhan."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+---
+import { getEntry } from "astro:content";
+
+const entry = await getEntry("landingPricing", "pricing");
+const p = entry!.data;
+---
+<section class="section" id="harga">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">{p.label}</span>
+      <h2>{p.title}</h2>
+      <p>{p.description}</p>
+    </div>
+    <div class="pricing-grid">
+      {p.plans.map((plan) => (
+        <div class={`pricing-card${plan.featured ? " featured" : ""}`}>
+          {plan.badge && (
+            <div
+              class="pricing-popular"
+              style={plan.badgeColor ? `background:${plan.badgeColor};` : undefined}
+            >
+              {plan.badge}
+            </div>
+          )}
+          <h3>{plan.name}</h3>
+          <div class="pricing-price">
+            {plan.price}<span>{plan.priceSuffix}</span>
+          </div>
+          <p class="pricing-desc">{plan.desc}</p>
+          <ul class="pricing-features">
+            {plan.features.map((ft) => (
+              <li class={ft.included ? "included" : "limited"} set:html={ft.text} />
+            ))}
+          </ul>
+          <a
+            href={plan.ctaHref}
+            class={`pricing-btn ${
+              plan.ctaStyle === "filled" ? "pricing-btn-filled" : "pricing-btn-outline"
+            }`}
+          >
+            {plan.ctaLabel}
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

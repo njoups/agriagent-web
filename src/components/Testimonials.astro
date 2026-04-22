@@ -1,0 +1,32 @@
+---
+import { getEntry } from "astro:content";
+
+const entry = await getEntry("landingTestimonials", "testimonials");
+const t = entry!.data;
+---
+<section class="section testimonials-section" id="testimoni">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">{t.label}</span>
+      <h2>{t.title}</h2>
+      <p>{t.description}</p>
+    </div>
+    <div class="testimonials-grid">
+      {t.items.map((item) => (
+        <div class="testimonial-card">
+          <div class="testimonial-stars" aria-label={`Rating ${item.rating} dari 5`}>
+            {"★".repeat(item.rating)}{"☆".repeat(5 - item.rating)}
+          </div>
+          <p class="testimonial-text">"{item.quote}"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">{item.initials}</div>
+            <div>
+              <div class="testimonial-name">{item.name}</div>
+              <div class="testimonial-role">{item.role}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
