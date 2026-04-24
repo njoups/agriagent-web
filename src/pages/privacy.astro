@@ -1,0 +1,232 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const lastUpdated = "24 April 2026";
+---
+<BaseLayout
+  title="Kebijakan Privasi"
+  description="Kebijakan Privasi AgriAgent — data yang kami kumpulkan, cara kami pakai, dan hak-hak Bapak/Ibu petani."
+>
+  <article class="blog-post">
+    <div class="container">
+      <div class="blog-post-meta">
+        <a href="/">← Kembali ke Beranda</a>
+      </div>
+      <h1>Kebijakan Privasi</h1>
+      <div class="blog-post-meta">
+        <span>Berlaku efektif: {lastUpdated}</span>
+      </div>
+
+      <div class="prose">
+        <p>
+          AgriAgent ("kami", "Layanan") menghargai privasi Bapak/Ibu petani
+          ("pengguna", "Anda"). Dokumen ini menjelaskan data apa yang kami
+          kumpulkan, bagaimana kami memakainya, dan hak yang Anda miliki atas
+          data tersebut. Dengan menggunakan aplikasi AgriAgent (baik versi
+          gratis maupun Premium), Anda setuju dengan kebijakan ini.
+        </p>
+
+        <h2>1. Siapa Kami</h2>
+        <p>
+          AgriAgent adalah aplikasi asisten AI untuk petani Indonesia. Kami
+          menyediakan fitur diagnosa penyakit tanaman via foto, kalender
+          tanam pintar, informasi harga komoditas, alarm hama, kalkulator
+          pupuk, panduan offline, komunitas tani, dan Tanya Kang Tani (AI
+          suara berbahasa daerah). Untuk pertanyaan terkait privasi, kontak
+          kami di <a href="mailto:halo@agriagent.co.id">halo@agriagent.co.id</a>.
+        </p>
+
+        <h2>2. Data yang Kami Kumpulkan</h2>
+        <h3>2.1 Data akun</h3>
+        <ul>
+          <li>Nama dan nomor HP (untuk registrasi & login)</li>
+          <li>Alamat email (opsional, untuk reset password)</li>
+          <li>Provinsi / kota / desa (untuk rekomendasi lokal)</li>
+          <li>Jenis tanaman utama yang dibudidayakan</li>
+        </ul>
+
+        <h3>2.2 Data fitur aplikasi</h3>
+        <ul>
+          <li>
+            <strong>Foto tanaman</strong> — diproses sementara oleh AI untuk
+            diagnosa. Foto <em>tidak kami simpan permanen</em> di server
+            kami; riwayat diagnosa (teks hasil) disimpan lokal di HP Anda
+            (database SQLite).
+          </li>
+          <li>
+            <strong>Rekaman suara</strong> (fitur Tanya Kang Tani) — dikirim
+            ke penyedia AI untuk ditranskripsi & dijawab. Tidak disimpan
+            setelah pemrosesan.
+          </li>
+          <li>
+            <strong>Lokasi GPS</strong> (opsional) — untuk prakiraan cuaca
+            lokal dan rekomendasi musim tanam. Anda bisa mematikan izin
+            lokasi kapan saja dari pengaturan HP.
+          </li>
+          <li>
+            <strong>Catatan keuangan & jadwal tanam</strong> — disimpan lokal
+            di HP Anda. Kami tidak mengakses kecuali Anda eksplisit meng-sync
+            ke cloud (fitur Premium).
+          </li>
+          <li>
+            <strong>Post komunitas</strong> (forum & direct message) —
+            disimpan di server kami supaya pengguna lain bisa lihat/balas.
+          </li>
+        </ul>
+
+        <h3>2.3 Data perangkat & penggunaan</h3>
+        <ul>
+          <li>
+            Device ID (untuk <strong>device lock</strong> — 1 akun = 1 HP,
+            mencegah akun dipakai orang lain)
+          </li>
+          <li>Versi Android, model HP, versi app (untuk debugging)</li>
+          <li>Statistik penggunaan fitur (agregat, anonim)</li>
+        </ul>
+
+        <h3>2.4 Data pembayaran (Premium)</h3>
+        <p>
+          Kami <strong>tidak menyimpan data kartu kredit atau akun e-wallet
+          Anda</strong>. Pembayaran diproses oleh <strong>Midtrans</strong>
+          (PT Midtrans — payment gateway berlisensi Bank Indonesia). Kami
+          hanya menerima konfirmasi transaksi (sukses/gagal), jumlah, dan ID
+          transaksi dari Midtrans.
+        </p>
+
+        <h2>3. Bagaimana Kami Pakai Data</h2>
+        <ul>
+          <li>Memberikan layanan inti (diagnosa, rekomendasi, dll)</li>
+          <li>Meningkatkan akurasi AI (berdasarkan data agregat anonim)</li>
+          <li>Memverifikasi identitas & mencegah penyalahgunaan akun</li>
+          <li>Memproses pembayaran langganan Premium</li>
+          <li>Mengirim notifikasi fitur & update (bisa di-opt-out)</li>
+          <li>Dukungan pelanggan via email/WhatsApp</li>
+        </ul>
+
+        <h2>4. Pihak Ketiga yang Memproses Data Anda</h2>
+        <p>
+          AgriAgent memakai layanan pihak ketiga berikut, yang memiliki
+          kebijakan privasi mereka sendiri:
+        </p>
+        <ul>
+          <li>
+            <strong>Google Gemini AI</strong> — memproses foto tanaman &
+            rekaman suara untuk fitur AI. Data tidak dipakai untuk melatih
+            model umum. Lihat
+            <a href="https://cloud.google.com/terms/data-processing-addendum" target="_blank" rel="noopener">Google Cloud DPA</a>.
+          </li>
+          <li>
+            <strong>Supabase</strong> — penyimpanan database (akun, komunitas,
+            langganan). Server di Asia Tenggara (Singapura).
+          </li>
+          <li>
+            <strong>Midtrans</strong> — payment gateway. Data pembayaran
+            diatur di
+            <a href="https://midtrans.com/privacy-policy" target="_blank" rel="noopener">Kebijakan Privasi Midtrans</a>.
+          </li>
+          <li>
+            <strong>PIHPS Bank Indonesia</strong> — sumber data harga
+            komoditas (publik, tidak memerlukan data Anda).
+          </li>
+          <li>
+            <strong>Unsplash</strong> — sumber gambar ilustrasi artikel
+            (publik, tidak memerlukan data Anda).
+          </li>
+          <li>
+            <strong>Expo / EAS</strong> — build & distribusi aplikasi Android.
+          </li>
+          <li>
+            <strong>Google Analytics</strong> (opsional, situs web) —
+            statistik kunjungan anonim.
+          </li>
+        </ul>
+
+        <h2>5. Penyimpanan & Keamanan Data</h2>
+        <ul>
+          <li>
+            Data pribadi (nama, nomor HP, email) dienkripsi saat transit
+            (HTTPS/TLS) dan saat disimpan (AES-256 di Supabase).
+          </li>
+          <li>
+            Password dihash dengan bcrypt — kami <strong>tidak pernah menyimpan
+            password dalam bentuk teks biasa</strong>.
+          </li>
+          <li>
+            Data lokal di HP (catatan tanam, riwayat diagnosa) disimpan di
+            SQLite — aksesnya dibatasi oleh sandbox Android.
+          </li>
+          <li>
+            Kami menyimpan data selama akun Anda aktif. Setelah akun dihapus,
+            data dihapus dalam 30 hari kecuali yang wajib disimpan karena
+            alasan hukum (misal, catatan transaksi pembayaran).
+          </li>
+        </ul>
+
+        <h2>6. Hak Anda</h2>
+        <p>Sesuai UU Perlindungan Data Pribadi (UU PDP No. 27/2022), Anda berhak:</p>
+        <ul>
+          <li>
+            <strong>Mengakses</strong> data pribadi Anda — bisa lihat/export
+            dari menu Profil.
+          </li>
+          <li>
+            <strong>Mengoreksi</strong> data yang salah.
+          </li>
+          <li>
+            <strong>Menghapus akun</strong> — menu Profil → Hapus Akun. Data
+            akan dihapus dalam 30 hari.
+          </li>
+          <li>
+            <strong>Menarik persetujuan</strong> pemrosesan data kapan saja.
+          </li>
+          <li>
+            <strong>Mengajukan keluhan</strong> ke
+            <a href="mailto:halo@agriagent.co.id">halo@agriagent.co.id</a>
+            atau ke Kementerian Kominfo jika tidak puas dengan tanggapan kami.
+          </li>
+        </ul>
+
+        <h2>7. Anak-Anak</h2>
+        <p>
+          AgriAgent ditujukan untuk pengguna 18 tahun ke atas. Kami tidak
+          secara sengaja mengumpulkan data dari anak di bawah umur. Jika
+          Anda mengetahui anak Anda telah membuat akun, kontak kami untuk
+          penghapusan.
+        </p>
+
+        <h2>8. Cookie & Analytics (Situs Web)</h2>
+        <p>
+          Situs agriagent.co.id memakai Google Analytics untuk statistik
+          kunjungan anonim (halaman yang dikunjungi, durasi, negara asal).
+          Tidak ada tracking pribadi. Anda bisa pakai browser extension
+          seperti <em>uBlock Origin</em> untuk blokir jika mau.
+        </p>
+
+        <h2>9. Perubahan Kebijakan</h2>
+        <p>
+          Kami bisa memperbarui kebijakan ini sewaktu-waktu. Perubahan
+          material akan diumumkan via notifikasi in-app dan email minimal
+          7 hari sebelum efektif. Dengan terus memakai layanan setelah
+          tanggal efektif, Anda setuju dengan versi terbaru.
+        </p>
+
+        <h2>10. Kontak</h2>
+        <p>
+          Pertanyaan, keluhan, atau permintaan terkait data pribadi:
+        </p>
+        <ul>
+          <li>Email: <a href="mailto:halo@agriagent.co.id">halo@agriagent.co.id</a></li>
+          <li>Subjek: "Data Pribadi — [topik]"</li>
+          <li>Respons dalam 3-5 hari kerja.</li>
+        </ul>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
+        <p style="color: var(--text-light); font-size: 0.9rem;">
+          Dokumen ini disediakan untuk transparansi. Jika terdapat konflik
+          antara versi Bahasa Indonesia dan terjemahan, versi Bahasa
+          Indonesia yang berlaku.
+        </p>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
