@@ -11,11 +11,11 @@
       "desc": "Coba fitur dasar AgriAgent — cukup buat petani kecil.",
       "features": [
         {
-          "text": "Tanya Kang Tani <strong>5x per hari</strong>",
+          "text": "Tanya Kang Tani <strong>2x per hari</strong>",
           "included": true
         },
         {
-          "text": "Diagnosa tanaman <strong>1x per minggu</strong>",
+          "text": "Diagnosa tanaman <strong>2x per bulan</strong>",
           "included": true
         },
         {
@@ -60,11 +60,11 @@
       "badge": "Paling Populer",
       "features": [
         {
-          "text": "Tanya Kang Tani <strong>10x per hari</strong> (2x lipat Free)",
+          "text": "Tanya Kang Tani <strong>10x per hari</strong> (5x lipat Free)",
           "included": true
         },
         {
-          "text": "Diagnosa tanaman <strong>5x per hari</strong> (35x lipat Free)",
+          "text": "Diagnosa tanaman <strong>5x per hari</strong> (75x lipat Free)",
           "included": true
         },
         {
