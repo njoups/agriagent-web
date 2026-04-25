@@ -11,19 +11,19 @@
       "desc": "Coba fitur dasar AgriAgent — cukup buat petani kecil.",
       "features": [
         {
-          "text": "Tanya Kang Tani 3x per hari",
-          "included": false
-        },
-        {
-          "text": "Diagnosa tanaman 1x per hari",
-          "included": false
-        },
-        {
-          "text": "Harga komoditas real-time",
+          "text": "Tanya Kang Tani <strong>5x per hari</strong>",
           "included": true
         },
         {
-          "text": "Kalender tanam AI",
+          "text": "Diagnosa tanaman <strong>1x per minggu</strong>",
+          "included": true
+        },
+        {
+          "text": "Kalender tanam <strong>2x per bulan</strong>",
+          "included": true
+        },
+        {
+          "text": "Harga komoditas real-time",
           "included": true
         },
         {
@@ -55,16 +55,20 @@
       "name": "Premium Bulanan",
       "price": "Rp 19.900",
       "priceSuffix": "/ bulan",
-      "desc": "Akses penuh semua fitur AI. Bayar per bulan, batal kapan saja.",
+      "desc": "Akses lebih banyak semua fitur AI. Bayar per bulan, batal kapan saja.",
       "featured": true,
       "badge": "Paling Populer",
       "features": [
         {
-          "text": "Tanya Kang Tani <strong>tanpa batas</strong>",
+          "text": "Tanya Kang Tani <strong>10x per hari</strong> (2x lipat Free)",
           "included": true
         },
         {
-          "text": "Diagnosa tanaman <strong>5x per hari</strong>",
+          "text": "Diagnosa tanaman <strong>5x per hari</strong> (35x lipat Free)",
+          "included": true
+        },
+        {
+          "text": "Kalender tanam <strong>7x per bulan</strong> (3.5x lipat Free)",
           "included": true
         },
         {
