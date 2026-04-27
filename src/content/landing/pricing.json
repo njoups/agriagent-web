@@ -72,23 +72,35 @@
           "included": true
         },
         {
-          "text": "🚨 Alarm Hama AI 7 hari ke depan",
+          "text": "Alarm Hama AI 7 hari ke depan",
           "included": true
         },
         {
-          "text": "💰 Prediksi harga panen terbaik",
+          "text": "Scan Pupuk AI (baca NPK dari kemasan)",
           "included": true
         },
         {
-          "text": "🌤️ Cuaca 14 hari (vs Free 7 hari)",
+          "text": "Scan Bukti OCR (nota ke catatan keuangan)",
           "included": true
         },
         {
-          "text": "🗣️ 6 Bahasa Daerah (Jawa Krama/Ngoko, Sunda, Batak, Minang, Bali)",
+          "text": "Prediksi Panen AI (estimasi untung-rugi)",
           "included": true
         },
         {
-          "text": "📊 Export laporan PDF keuangan",
+          "text": "Simulasi KUR Tani (BRI, BNI, Mandiri, BSI)",
+          "included": true
+        },
+        {
+          "text": "Cuaca 14 hari (vs Free 7 hari)",
+          "included": true
+        },
+        {
+          "text": "6 Bahasa Daerah (Jawa Krama/Ngoko, Sunda, Batak, Minang, Bali)",
+          "included": true
+        },
+        {
+          "text": "Export laporan PDF keuangan",
           "included": true
         },
         {

@@ -14,7 +14,16 @@ const f = entry!.data;
     <div class="features-grid">
       {f.items.map((item) => (
         <div class="feature-card">
-          <div class="feature-icon">{item.icon}</div>
+          {item.premium && <span class="premium-tag">PREMIUM</span>}
+          <div class={`feature-icon${item.premium && item.iconType === "svg" ? " premium" : ""}`}>
+            {item.iconType === "image" ? (
+              <img src={item.icon} alt={item.title} loading="lazy" />
+            ) : item.iconType === "svg" ? (
+              <Fragment set:html={item.icon} />
+            ) : (
+              item.icon
+            )}
+          </div>
           <h3>{item.title}</h3>
           <p>{item.description}</p>
         </div>

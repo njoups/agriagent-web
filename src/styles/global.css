@@ -316,30 +316,55 @@ nav.site-nav {
   box-shadow: var(--shadow-sm);
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid rgba(45,122,58,0.06);
+  position: relative;
 }
 .feature-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow);
 }
 .feature-icon {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   background: var(--primary-light);
-  border-radius: 14px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   font-size: 28px;
+  overflow: hidden;
+}
+.feature-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
 }
 .feature-icon svg {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   stroke: var(--primary);
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+.feature-icon.premium {
+  background: #FEF3C7;
+}
+.feature-icon.premium svg {
+  stroke: #D97706;
+}
+.premium-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #FBBF24, #F59E0B);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
 }
 .feature-card h3 {
   font-size: 1.15rem;

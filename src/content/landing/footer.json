@@ -22,7 +22,19 @@
           "href": "/#fitur"
         },
         {
+          "label": "Catatan Keuangan",
+          "href": "/#fitur"
+        },
+        {
           "label": "Alarm Hama AI",
+          "href": "/#fitur"
+        },
+        {
+          "label": "Scan Pupuk AI",
+          "href": "/#fitur"
+        },
+        {
+          "label": "Simulasi KUR",
           "href": "/#fitur"
         }
       ]

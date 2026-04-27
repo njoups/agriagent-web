@@ -71,9 +71,11 @@ const landingFeatures = defineCollection({
     title: z.string(),
     description: z.string(),
     items: z.array(z.object({
-      icon: z.string(),   // emoji atau SVG path
+      icon: z.string(),   // emoji, image path (/assets/...), atau inline SVG markup
+      iconType: z.enum(["emoji", "image", "svg"]).default("emoji"),
       title: z.string(),
       description: z.string(),
+      premium: z.boolean().default(false),
     })),
   }),
 });

@@ -6,11 +6,11 @@
   "items": [
     {
       "question": "Apakah AgriAgent benar-benar gratis?",
-      "answer": "Ya. Paket Gratis Rp 0/bulan selamanya — tanpa kartu kredit, tanpa trial period. Kamu dapat Tanya Kang Tani 2x/hari, Diagnosa Foto 2x/bulan, Kalender Tanam 2x/bulan, Harga Pasar real-time, Komunitas Tani, Panduan Penyakit, Kalkulator Pupuk NPK, dan Cuaca 7 hari. Premium (Rp 19.900/bulan) hanya kalau kamu mau fitur AI lebih banyak."
+      "answer": "Ya. Paket Gratis Rp 0/bulan selamanya, tanpa kartu kredit, tanpa trial period. Kamu dapat Tanya Kang Tani 2x/hari, Diagnosa Foto 2x/bulan, Kalender Tanam 2x/bulan, Harga Pasar real-time, Catatan Keuangan, Riwayat, Komunitas Tani, Panduan Penyakit, Kalkulator Pupuk NPK, dan Cuaca 7 hari. Premium (Rp 19.900/bulan) hanya kalau kamu mau fitur AI lebih banyak."
     },
     {
       "question": "Apa beda paket Gratis vs Premium?",
-      "answer": "Gratis: Tanya Kang Tani 2x/hari, Diagnosa 2x/bulan, Kalender tanam 2x/bulan, plus semua fitur dasar. Premium: Tanya Kang Tani 10x/hari (5x lipat Free), Diagnosa 5x/hari (75x lipat Free), Kalender tanam 7x/bulan (3.5x lipat Free), Alarm Hama AI 7 hari, Prediksi Harga Panen, Cuaca 14 hari, 6 Bahasa Daerah (Jawa, Sunda, Batak, Minang, Bali), dan Export PDF laporan keuangan."
+      "answer": "Gratis: Tanya Kang Tani 2x/hari, Diagnosa 2x/bulan, Kalender Tanam 2x/bulan, plus catatan keuangan, riwayat, komunitas, panduan, kalkulator pupuk, dan cuaca 7 hari. Premium: Tanya 10x/hari, Diagnosa 5x/hari, Kalender 7x/bulan, plus Alarm Hama AI, Scan Pupuk AI, Scan Bukti OCR, Prediksi Panen AI, Simulasi KUR Tani, Cuaca 14 hari, 6 Bahasa Daerah (Jawa, Sunda, Batak, Minang, Bali), dan Export PDF laporan keuangan."
     },
     {
       "question": "Apakah bisa dipakai tanpa internet?",
