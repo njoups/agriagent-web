@@ -59,8 +59,8 @@
       "description": "Hitung dosis Urea, SP-36, KCl per hektar atau per m² buat padi, cabai, jagung, tomat, bawang. Lengkap estimasi biaya HET bersubsidi."
     },
     {
-      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
-      "iconType": "svg",
+      "icon": "/assets/mockup-icons/riwayat.png",
+      "iconType": "image",
       "title": "Riwayat Aktivitas",
       "description": "Semua catatan terkumpul rapi. Riwayat diagnosa, kalender, keuangan, dan tanya AI bisa dibuka kapan saja sebagai arsip lengkap perjalanan tani kamu."
     },
@@ -97,6 +97,13 @@
       "iconType": "image",
       "title": "Simulasi KUR",
       "description": "Hitung cicilan KUR Tani BRI, BNI, Mandiri, BSI sesuai modal yang kamu butuhkan. Dapat estimasi ROI plus daftar dokumen yang harus disiapkan.",
+      "premium": true
+    },
+    {
+      "icon": "/assets/mockup-icons/rekomendasi-pupuk.png",
+      "iconType": "image",
+      "title": "Rekomendasi Pupuk AI",
+      "description": "AI racik formula pupuk ideal sesuai jenis tanaman, fase tumbuh, jenis tanah, dan target hasil panen kamu. Lengkap jadwal pemupukan plus estimasi biaya.",
       "premium": true
     }
   ]
